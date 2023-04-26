@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</html>
+<style>
+    body{
+        background-color:#8fb0ce;
+    }
+    main{
+        background-color:white;
+        border:2px solid black;
+        margin:auto;
+        width:480px;
+        box-shadow:5px 5px 15px #a58a90f4;
+        padding:10px;
+
+    }
+    fieldset{
+        width:420px;
+        margin:auto;
+        margin-bottom:20px;
+        
+    }
+    h1{
+        text-align:center;
+    }
+</style>
+</head>
+<body>
+
+<main>
+<form method="get" autocomplete="on">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div>
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required><br><br>
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="" id="" maxlength="99" minlength="14" placeholder="18"required><br><br>
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="ex: vic_linda@gmail.com" required><br><br>
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" minlength="3" placeholder="Digite uma senha forte"><br><br>
+        </div>
+        <div>
+            <label for="est">Selecione o Estado:</label>
+                <select name="est" id="est">
+                    <option value="SL">Selecionar</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="AC">Acre</option>
+                    <option value="DF">Destrito-Federal</option>
+                    <option value="MG">Mato-Grosso</option>
+                    
+                    
+
+                </select>
+        </div><br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label for="">Selecione as tecnologias:</label><br>
+            <input type="checkbox" id="techtml" name="techtml"><lable for="techtml">HTML</lable>
+            <input type="checkbox" name="tecss" id="teccss">CSS
+            <input type="checkbox" id="tecjav" name="tecjav">Javascript
+            <input type="checkbox" id="tectyp" name="tectyp">Typescript<br><br>
+            <label>Selecione uma ocupação:</label><br>
+            <input type="radio" id="ocufro" name="ocufro"><label for="ocufro">Front-End</label>
+            <input type="radio" id="ocubac" name="ocubac"><label for="ocubac">Back-end</label>
+            <input type="radio" id="ocuful" name="ocuful"><label for="ocuful">Full-Stack</label><br><br>
+            <div>
+            <label>Escreva sobre você:</label><br>
+        <textarea rows="10" cols="50" placeholder="Descreva você"></textarea>
+        </div><br><br>
+        <div>
+            <label for="arq">Anexe seu currículo:</label>
+            <input type="file" name="arq" id="arq" accept="image/png. image/jpeg.">
+        </div>
+        </fieldset> 
+        </div><br>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </div>
+</form>
+</main>
+<br> <br>
+<center>
+<a href="index.html">Index.hmtl</a></center>
+</body>
